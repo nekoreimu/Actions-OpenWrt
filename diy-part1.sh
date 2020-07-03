@@ -13,3 +13,11 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git clone vm https://github.com/srchack/custom-packages package/custom-packages
+git clone ser https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
+git clone kenzo https://github.com/kenzok8/openwrt-packages package/openwrt-packages
+git clone helloworld https://github.com/fw876/helloworld package/helloworld
+svn co https://github.com/kenzok8/small/trunk/brook package/brook 
+svn co https://github.com/kenzok8/small/trunk/chinadns-ng package/chinadns-ng
+svn co https://github.com/kenzok8/small/trunk/simple-obfs package/simple-obfs
+svn co https://github.com/kenzok8/small/trunk/tcping package/tcping
