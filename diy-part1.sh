@@ -16,6 +16,7 @@
 sed -i 's/192.168.1.1/10.10.10.1/g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 sed -i 's/192.168./10.10./g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 git clone https://github.com/srchack/custom-packages package/custom-packages
+git clone https://github.com/jerrykuku/luci-app-vssr package/vssr
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 git clone https://github.com/fw876/helloworld package/helloworld
