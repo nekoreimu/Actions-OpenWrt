@@ -13,6 +13,7 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
+git reset --hard 33f7cb7
 sed -i 's/192.168.1.1/10.10.10.1/g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 sed -i 's/192.168./10.10./g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 git clone https://github.com/srchack/custom-packages package/custom-packages
@@ -20,9 +21,9 @@ git clone https://github.com/jerrykuku/luci-app-vssr package/vssr
 git clone https://github.com/tty228/luci-app-serverchan package/luci-app-serverchan
 git clone https://github.com/kenzok8/openwrt-packages package/openwrt-packages
 git clone https://github.com/fw876/helloworld package/helloworld
-svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
+#svn co https://github.com/Lienol/openwrt-package/trunk/lienol/luci-app-passwall package/luci-app-passwall
 svn co https://github.com/kenzok8/small/trunk/brook package/brook
 svn co https://github.com/kenzok8/small/trunk/chinadns-ng package/chinadns-ng
 svn co https://github.com/kenzok8/small/trunk/simple-obfs package/simple-obfs
 svn co https://github.com/kenzok8/small/trunk/tcping package/tcping
-rm -rf package/openwrt-packages/luci-app-passwall
+#rm -rf package/openwrt-packages/luci-app-passwall
