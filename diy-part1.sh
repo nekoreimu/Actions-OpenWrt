@@ -13,7 +13,7 @@
 
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
-git reset --hard cc2ddb2
+git checkout cc2ddb220a16c77e32e96fb7cbf39b5be6bae0ea
 sed -i 's/192.168.1.1/10.10.10.1/g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 sed -i 's/192.168./10.10./g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 git clone https://github.com/srchack/custom-packages package/custom-packages
