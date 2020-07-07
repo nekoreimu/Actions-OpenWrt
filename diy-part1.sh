@@ -14,8 +14,6 @@
 # Add a feed source
 sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 #git reset --hard cc2ddb220a
-sed -i 's/192.168.1.1/10.10.10.1/g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
-sed -i 's/192.168./10.10./g' /home/runner/work/Actions-OpenWrt/Actions-OpenWrt/openwrt/package/base-files/files/bin/config_generate
 git clone https://github.com/srchack/custom-packages package/custom-packages
 git clone https://github.com/jerrykuku/luci-app-vssr package/vssr
 git clone https://github.com/jerrykuku/lua-maxminddb package/lean/lua-maxminddb
